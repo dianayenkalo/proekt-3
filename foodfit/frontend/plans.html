@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вибір плану - FoodFit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="plans">
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🍎 FoodFit</h1>
+            <a href="index.html" class="nav-link">Головна</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2>Оберіть план харчування</h2>
+        <div class="plans-grid">
+            <div class="plan-card">
+                <h3>Тижневий план</h3>
+                <p class="price">7 днів</p>
+                <p>Ідеально для початку вашого шляху до здорового харчування</p>
+                <form id="plan-form" method="get" action="preferences.html">
+                    <input type="hidden" name="plan_type" value="weekly">
+                    <button type="submit" class="btn btn-primary">Обрати</button>
+                </form>
+            </div>
+            <div class="plan-card">
+                <h3>Місячний план</h3>
+                <p class="price">30 днів</p>
+                <p>Найкращий вибір для довгострокового результату</p>
+                <form method="get" action="preferences.html">
+                    <input type="hidden" name="plan_type" value="monthly">
+                    <button type="submit" class="btn btn-primary">Обрати</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

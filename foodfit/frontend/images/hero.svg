@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#2d8659" opacity="0.1"/>
+  <circle cx="200" cy="200" r="80" fill="#4a9d7a" opacity="0.3"/>
+  <circle cx="600" cy="150" r="60" fill="#2d8659" opacity="0.3"/>
+  <text x="400" y="200" text-anchor="middle" fill="#2d8659" font-family="Arial" font-size="48" font-weight="bold">FoodFit</text>
+  <text x="400" y="240" text-anchor="middle" fill="#4a9d7a" font-family="Arial" font-size="24">Персоналізоване харчування</text>
+</svg>
+
