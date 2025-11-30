@@ -3,8 +3,7 @@
  * Handles all page logic, API calls, and user interactions
  */
 
-const API_BASE_URL = 'http://127.0.0.1:5000';
-
+const API_BASE_URL = 'https://foodfit-api.onrender.com';
 // Storage keys for localStorage
 const STORAGE_KEYS = {
     menuResponse: 'foodfit_menu_response',
@@ -530,4 +529,5 @@ document.addEventListener('DOMContentLoaded', () => {
             break;
     }
 });
+
 
