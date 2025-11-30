@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваше меню - FoodFit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="menu">
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🍎 FoodFit</h1>
+            <a href="index.html" class="nav-link">Головна</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2>Ваше індивідуальне меню</h2>
+
+        <div id="plan-info" class="plan-info-box"></div>
+
+        <div id="days-tabs" class="days-tabs"></div>
+
+        <div id="summary" class="summary-box"></div>
+
+        <div id="menu-container" class="menu-grid"></div>
+
+        <section class="snacks-section">
+            <h3>Перекуси (опціонально)</h3>
+            <p>Додайте перекуси для корекції калорійності вашого плану</p>
+            <div id="snack-list" class="snacks-grid"></div>
+        </section>
+
+        <div id="order-status"></div>
+        <button id="checkout-button" class="btn btn-primary btn-large">Оформити доставку</button>
+    </main>
+
+    <!-- Checkout modal -->
+    <div id="checkout-backdrop" class="modal-backdrop">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3>Оформлення доставки</h3>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="checkout-name">Ім'я *</label>
+                    <input type="text" id="checkout-name" name="user_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout-phone">Телефон *</label>
+                    <input type="tel" id="checkout-phone" name="phone" pattern="[+0-9()\-\s]{7,20}" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout-address">Адреса доставки *</label>
+                    <textarea id="checkout-address" name="address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="checkout-time">Зручний час доставки</label>
+                    <input type="time" id="checkout-time" name="delivery_time">
+                </div>
+                <button type="submit" class="btn btn-primary">Підтвердити замовлення</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
